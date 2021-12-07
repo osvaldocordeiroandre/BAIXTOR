@@ -1,0 +1,109 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: rgb(43, 43, 43);
+
+    font-family: sans-serif;
+
+    padding-top: 95px;
+}
+
+header{
+    background-color: black;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    position: fixed;
+    top: 0;
+
+    width: 100%;
+}
+
+.navbar{
+    margin-right: 30px;
+}
+
+header h1{
+    color: rgb(73, 223, 35);
+
+    font-family: Bebas Neue;
+
+    margin: 10px;
+    margin-left: 35px;
+}
+
+a{
+    text-decoration: none;
+
+    color: rgb(102, 236, 49);
+}
+
+.ação{
+    margin-right: 20px;
+}
+
+.ação:hover{
+    background-color: rgb(73, 223, 35);
+    color: whitesmoke;
+
+    padding: 6px;
+    
+    border-radius: 10px;
+}
+
+.comedia:hover{
+    background-color: rgb(73, 223, 35);
+    color: whitesmoke;
+
+    padding: 6px;
+    
+    border-radius: 10px;
+}
+
+/*começo da main*/
+
+main h1{
+    color: whitesmoke;
+
+    font-family: manrope;
+    font-weight: 100;
+
+    display: flex;
+    justify-content: center;
+
+    font-size: 25px;
+}
+
+.capas{
+    text-align: center;
+
+    margin-top: 20px;
+}
+
+/*footer*/
+
+footer{
+    background-color: black;
+
+    text-align: center;
+
+    color: whitesmoke;
+
+    font-size: 16px;
+}
+
+footer p{
+    padding: 10px;
+
+    font-family: manrope;
+    font-weight: 100;
+}
+
