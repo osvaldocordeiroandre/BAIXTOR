@@ -40,6 +40,16 @@ header h1{
     margin-left: 35px;
 }
 
+.borderline{
+    border: solid 1px;
+
+    opacity: 20%;
+
+    margin: 10px 40%;
+
+    width: 20%;
+}
+
 a{
     text-decoration: none;
 
