@@ -78,6 +78,25 @@ a{
     border-radius: 10px;
 }
 
+.online{
+    margin-left: 10px;
+}
+
+.online:hover{
+    background-color: rgb(73, 223, 35);
+    color: whitesmoke;
+
+    padding: 2px;
+    
+    border-radius: 10px;
+}
+
+@media (max-width: 385px){
+    .name-logo{
+        font-size: 25px;
+    }
+}
+
 /*começo da main*/
 
 main h1{
@@ -117,3 +136,23 @@ footer p{
     font-weight: 100;
 }
 
+/*Player area*/
+
+.player{
+    margin-right: 30px;
+
+    text-align: center;
+
+    width: 100%;
+}
+
+.playergo{
+    text-align: center;
+
+    margin: 30px;
+}
+
+iframe{
+    width: 300px;
+    height: 210px;
+}
