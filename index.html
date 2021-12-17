@@ -77,7 +77,7 @@
 function busca(input_field,div){
     input_field.onkeyup=function(e){
         for(di of div.children){
-            r  = new RegExp(this.value,"g")
+            r  = new RegExp(this.value.toLowerCase(),"g")
             if(di.getAttribute("nome").toLowerCase().match(r) != null)
                 di.style.removeProperty('display')
             else
