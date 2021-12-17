@@ -13,6 +13,7 @@
 <body>
     <header>
         <h1 class="name-logo"><a href="index.html">BAIXTOR</a></h1>
+        <input class="pesquisa" placeholder="Filme name" search="filmes">
         <div class="navbar">
             <a class="ação" href="ação.html"></a>
             <a class="comedia" href="comedia.html"></a>
@@ -23,40 +24,40 @@
     <main>
         <h1>ÚLTIMOS FILMES</h1>
         <section class="borderline"></section>
-        <div class="capas">
-            <a href="jack.html"><img src="Capas/filmes online/jack o estripador, a historia não contada.png" width="200px" alt=""></a>
+        <div class="capas" id="filmes">
+            <div nome="jack o estripador, a historia não contada"><a href="jack.html"><img src="Capas/filmes online/jack o estripador, a historia não contada.png" width="200px" alt=""></a></div>
 
-            <a href="encontros.html"><img src="Capas/encontros.png" width="200px" alt=""></a>
+            <div nome="encontros"><a href="encontros.html"><img src="Capas/encontros.png" width="200px" alt=""></a></div>
 
-            <a href="bugado.html"><img src="Capas/Ron Bugado - R5.png" width="200px" alt=""></a>
+            <div nome="Ron Bugado"><a href="bugado.html"><img src="Capas/Ron Bugado - R5.png" width="200px" alt=""></a></div>
 
-            <a href="quebrando.html"><img src="Capas/filmes online/Quebrando a banca.png" width="200px" alt=""></a>
+            <div nome="Quebrando a banca"><a href="quebrando.html"><img src="Capas/filmes online/Quebrando a banca.png" width="200px" alt=""></a></div>
 
-            <a href="addams.html"><img src="Capas/filmes online/familia addams 2.png" width="200px" alt=""></a>
+            <div nome="familia addams"><a href="addams.html"><img src="Capas/filmes online/familia addams 2.png" width="200px" alt=""></a></div>
 
-            <a href="duas.html"><img src="Capas/filmes online/O senhor dos aneis as duas torres.png" width="200px" alt=""></a>
+            <div nome="O senhor dos aneis as duas torres"><a href="duas.html"><img src="Capas/filmes online/O senhor dos aneis as duas torres.png" width="200px" alt=""></a></div>
 
-            <a href="hobbit1.html"><img src="Capas/filmes online/Hobbit 1.png" width="200px" alt=""></a>
+            <div nome="Hobbit"><a href="hobbit1.html"><img src="Capas/filmes online/Hobbit 1.png" width="200px" alt=""></a></div>
 
-            <a href="hobbit2.html"><img src="Capas/filmes online/hobbit 2.png" width="200px" alt=""></a>
+            <div nome="Hobbit"><a href="hobbit2.html"><img src="Capas/filmes online/hobbit 2.png" width="200px" alt=""></a></div>
 
-            <a href="hobbit3.html"><img src="Capas/filmes online/Hobbit 3.png" width="200px" alt=""></a>
+            <div nome="Hobbit"><a href="hobbit3.html"><img src="Capas/filmes online/Hobbit 3.png" width="200px" alt=""></a></div>
 
-            <a href="candy.html"><img src="Capas/a lenda de candy.png" width="200px" alt=""></a>
+            <div nome="A lenda de candy"><a href="candy.html"><img src="Capas/a lenda de candy.png" width="200px" alt=""></a></div>
 
-            <a href="007.html"><img src="Capas/007.png" width="200px" alt=""></a>
+            <div nome="007"><a href="007.html"><img src="Capas/007.png" width="200px" alt=""></a></div>
 
-            <a href="alerta.html"><img src="Capas/alerta vermelho.png" width="200px" alt=""></a>
+            <div nome="Alerta vermelho"><a href="alerta.html"><img src="Capas/alerta vermelho.png" width="200px" alt=""></a></div>
 
-            <a href="10.html"><img src="Capas/filmes online/distrito 9.png" width="200px" alt=""></a>
+            <div nome="Distrito 9"><a href="10.html"><img src="Capas/filmes online/distrito 9.png" width="200px" alt=""></a></div>
 
-            <a href="army.html"><img src="Capas/army of the dead invasão em las vegas.png" width="200px" alt=""></a>
+            <div nome="army of the dead invasão em las vegas"><a href="army.html"><img src="Capas/army of the dead invasão em las vegas.png" width="200px" alt=""></a></div>
 
-            <a href="free.html"><img src="Capas/Novos filmes/free guy.png" width="200px" alt=""></a>
+            <div nome="Free guy"><a href="free.html"><img src="Capas/Novos filmes/free guy.png" width="200px" alt=""></a></div>
 
-            <a href="charlie.html"><img src="Capas/charlie.png" width="200px" alt=""></a>
+            <div nome="Quem é você, Charlie Brown?"><a href="charlie.html"><img src="Capas/charlie.png" width="200px" alt=""></a></div>
 
-            <a href="caes.html"><img src="Capas/Novos filmes/ataque dos cães.jpg" width="200px" alt=""></a>
+            <div nome="Ataque dos cães"><a href="caes.html"><img src="Capas/Novos filmes/ataque dos cães.jpg" width="200px" alt=""></a></div>
         </div>
     </main>
 
@@ -65,6 +66,26 @@
             <br>
             For my Parents ♥</p>
     </footer>
+
+    <script>
+        for(i of document.querySelectorAll('[search]')){
+    try{
+        busca(i,document.querySelector("#"+i.getAttribute('search')))
+    }catch(e){}
+}
+
+function busca(input_field,div){
+    input_field.onkeyup=function(e){
+        for(di of div.children){
+            r  = new RegExp(this.value,"g")
+            if(di.getAttribute("nome").toLowerCase().match(r) != null)
+                di.style.removeProperty('display')
+            else
+                di.style.display = "none"
+        }
+    }
+}
+    </script>
 </body>
 
 </html>

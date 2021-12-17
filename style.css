@@ -40,6 +40,20 @@ header h1{
     margin-left: 35px;
 }
 
+.pesquisa{
+    border: none;
+
+    outline: none;
+
+    background-color: black;
+
+    text-align: center;
+    
+    width: 100px;
+
+    margin-left: 30px;
+}
+
 .borderline{
     border: solid 1px;
 
@@ -112,9 +126,12 @@ main h1{
 }
 
 .capas{
-    text-align: center;
-
     margin-top: 20px;
+
+    display: flex;
+    flex-wrap: wrap;
+
+    justify-content: center;
 }
 
 /*footer*/
