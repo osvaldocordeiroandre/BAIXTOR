@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="ico/new-ico.ico" type="image/x-icon">
+    <title>BAIXTOR</title>
+</head>
+
+<body>
+    <header>
+        <h1 class="name-logo"><a href="index.html">BAIXTOR</a></h1>
+        <input class="pesquisa" placeholder="Filme name" search="filmes">
+        <div class="navbar">
+            <a class="online" href="download.html">DOWNLOAD</a>
+        </div>
+    </header>
+
+    <main>
+        <h1>Comédia</h1>
+        <section class="borderline"></section>
+        <div class="capas" id="filmes">
+
+            <div class="space" nome="Te Prego Lá Fora"><a href="Porta.html"><img
+                        src="Capas/filmes online/novos/Porta dos Fundos Te Prego Lá Fora.png" width="200" alt=""></a>
+            </div>
+
+
+            <div class="space" nome="Ron Bugado"><a href="bugado.html"><img src="Capas/Ron Bugado - R5.png"
+                        width="200px" alt=""></a></div>
+
+            <div class="space" nome="Quebrando a banca"><a href="quebrando.html"><img
+                        src="Capas/filmes online/Quebrando a banca.png" width="200px" alt=""></a></div>
+
+            <div class="space" nome="Familia addams"><a href="addams.html"><img
+                        src="Capas/filmes online/familia addams 2.png" width="200px" alt=""></a></div>
+
+            <div class="space" nome="Alerta vermelho"><a href="alerta.html"><img src="Capas/alerta vermelho.png"
+                        width="200px" alt=""></a></div>
+
+            <div class="space" nome="Free guy"><a href="free.html"><img src="Capas/Novos filmes/free guy.png"
+                        width="200px" alt=""></a></div>
+
+            <div class="space" nome="Quem é você, Charlie Brown?"><a href="charlie.html"><img src="Capas/charlie.png"
+                        width="200px" alt=""></a></div>
+    </main>
+
+    <footer>
+        <p>Este site não hospeda nenhum vídeo em seu servidor. Todo conteúdo é provido de terceiros não afiliados. ©
+            <br>
+            For my Parents ♥
+        </p>
+    </footer>
+
+    <script>
+        for (i of document.querySelectorAll('[search]')) {
+            try {
+                busca(i, document.querySelector("#" + i.getAttribute('search')))
+            } catch (e) { }
+        }
+
+        function busca(input_field, div) {
+            input_field.onkeyup = function (e) {
+                for (di of div.children) {
+                    r = new RegExp(this.value.toLowerCase(), "g")
+                    if (di.getAttribute("nome").toLowerCase().match(r) != null)
+                        di.style.removeProperty('display')
+                    else
+                        di.style.display = "none"
+                }
+            }
+        }
+    </script>
+</body>
+
+</html>
