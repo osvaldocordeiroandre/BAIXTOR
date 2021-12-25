@@ -110,6 +110,19 @@ a{
     border-radius: 10px;
 }
 
+.series{
+    margin-right: 10px;
+}
+
+.series:hover{
+    background-color: rgb(73, 223, 35);
+    color: whitesmoke;
+
+    padding: 6px;
+    
+    border-radius: 10px;
+}
+
 @media (max-width: 385px){
     .name-logo{
         font-size: 25px;
