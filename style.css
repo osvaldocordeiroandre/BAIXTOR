@@ -96,6 +96,10 @@ a{
     border-radius: 10px;
 }
 
+.comedia{
+    color: skyblue;
+}
+
 .comedia:hover{
     background-color: rgb(73, 223, 35);
     color: whitesmoke;
@@ -120,6 +124,8 @@ a{
 
 .series{
     margin-right: 10px;
+
+    color: skyblue;
 }
 
 .series:hover{
@@ -209,7 +215,7 @@ footer p{
 
         font-size: 12px;
 
-        margin-left: 5px;
+        margin-left: 20px;
     }
 
     .comedia{
@@ -220,6 +226,7 @@ footer p{
         font-size: 12px;
 
         margin-top: 8px;
+        margin-left: 15px;
     }
 }
 
