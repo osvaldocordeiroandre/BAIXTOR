@@ -185,6 +185,13 @@ footer p{
     font-weight: 100;
 }
 
+.Footer-Series{
+    position: absolute;
+    bottom: 0;
+
+    width: 100%;
+}
+
 /*Player area*/
 
 .player{
