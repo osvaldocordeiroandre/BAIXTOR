@@ -97,7 +97,7 @@ a{
 }
 
 .comedia{
-    color: skyblue;
+    color: rgb(145, 206, 130);;;
 }
 
 .comedia:hover{
@@ -125,7 +125,7 @@ a{
 .series{
     margin-right: 10px;
 
-    color: skyblue;
+    color: rgb(145, 206, 130);;;
 }
 
 .series:hover{
@@ -215,26 +215,30 @@ footer p{
 }
 
 @media (max-width: 691px){
-    .series{
+    header{
         display: flex;
         flex-direction: column;
+        justify-content: center;
         align-items: center;
 
-        font-size: 12px;
-
-        margin-left: 20px;
+        padding-bottom: 10px;
     }
 
-    .comedia{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
+    .navbar{ 
 
-        font-size: 12px;
+        margin: 0;
 
-        margin-top: 8px;
-        margin-left: 15px;
+        padding-top: 20px;
+
+        text-align: center;
+
+        width: 100%;
     }
+
+    main{
+        margin-top: 60px;
+    }
+
 }
 
 .space{
