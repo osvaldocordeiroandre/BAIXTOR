@@ -32,3 +32,15 @@ function definirBotao() {
 }
 
 window.addEventListener('scroll', definirBotao);
+
+
+function botaoMenu() {
+    let menu = document.querySelector('.nav-list');
+  
+    if (menu.style.display == 'none') {
+      menu.style.display = 'flex';
+    } else {
+      menu.style.display = 'none';
+    }
+  
+  };

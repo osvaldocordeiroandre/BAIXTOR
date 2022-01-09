@@ -15,11 +15,13 @@
         <h1 class="name-logo"><a href="index.html">BAIXTOR</a></h1>
         <input class="pesquisa" placeholder="Filme name" search="filmes">
         <div class="navbar">
-            <a class="series" href="series.html">SÉRIES</a>
-            <a class="comedia" href="ComediaOnline.html">COMÉDIA</a>
+            <ul class="nav-list">
+                <li><a class="series" href="series.html">SÉRIES</a></li>
+                <li><a class="comedia" href="ComediaOnline.html">COMÉDIA</a></li>
+            </ul>
             <!-- <a class="online" href="download.html">DOWNLOAD</a> -->
         </div>
-        <button>&#9776;</button>
+        <button onclick="botaoMenu()">&#9776;</button>
     </header>
 
     <main>
@@ -247,6 +249,7 @@
 
     <div class="button-upper" onclick="buttonUpper()">Subir</div>
     <script src="file.js"></script>
+    <script src="pace.min.js"></script>
 
 </body>
 
