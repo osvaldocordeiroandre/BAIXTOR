@@ -266,4 +266,16 @@ footer p{
     text-align: center;
 
     padding-top: 20px;
+
+    animation: opacidade 1s;
 } 
+
+@keyframes opacidade{
+    from{
+        opacity: 0;
+    }
+
+    to{
+        opacity: 1;
+    }
+}
