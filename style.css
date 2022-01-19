@@ -104,15 +104,17 @@ a{
 
 .comedia{
     color: rgb(145, 206, 130);;;
+
+    transition: 0.2s;
 }
 
 .comedia:hover{
-    background-color: rgb(73, 223, 35);
-    color: whitesmoke;
+    border-bottom: 3px solid #49df23;
 
-    padding: 6px;
-    
-    border-radius: 10px;
+    color: #30831b;
+
+    transition: 0.3s;
+
 }
 
 .online{
@@ -131,16 +133,17 @@ a{
 .series{
     margin-right: 10px;
 
-    color: rgb(145, 206, 130);;;
+    color: rgb(145, 206, 130);
+
+    transition: 0.2s;
 }
 
 .series:hover{
-    background-color: rgb(73, 223, 35);
-    color: whitesmoke;
+    border-bottom: 3px solid #49df23;
 
-    padding: 6px;
-    
-    border-radius: 10px;
+    color: #30831b;
+
+    transition: 0.3s;
 }
 
 @media (max-width: 385px){
