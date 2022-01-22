@@ -45,3 +45,8 @@ function botaoMenu() {
   
   };
 
+  function loading(){
+      document.querySelector('.loader-wrapper').style.display = 'none';
+      document.querySelector('.content').style.display = 'block';
+  }
+
