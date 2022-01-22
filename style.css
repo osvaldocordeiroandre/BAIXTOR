@@ -12,6 +12,8 @@ body{
     font-family: sans-serif;
 
     padding-top: 95px;
+
+    overflow-x: hidden;
 }
 
 header{
@@ -320,3 +322,42 @@ footer p{
         opacity: 1;
     }
 }
+
+.loader-wrapper{
+    background-color: rgb(43, 43, 43);
+
+    width: 100vw;
+    height: 100vh;
+
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    display: none;
+}
+
+.loader{
+    display: inline-block;
+
+    width: 30px;
+    height: 30px;
+
+    position: relative;
+
+    border: 4px solid rgb(73, 223, 35);
+
+    animation: loader 2s infinite ease;
+}
+
+@keyframes loader {
+    0% { transform: rotate(0deg);}
+    25% { transform: rotate(180deg);}
+    50% { transform: rotate(180deg);}
+    75% { transform: rotate(360deg);}
+    100% { transform: rotate(360deg);}
+  }
+
