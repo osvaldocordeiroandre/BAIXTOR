@@ -208,9 +208,9 @@ footer p{
 }
 
 .playergo{
+
     text-align: center;
 
-    margin: 50px;
 }
 
 /* This is a compiled file, you should be editing the file in the templates directory */
@@ -281,8 +281,8 @@ footer p{
 
         cursor: pointer;
     }
-
 }
+
 
 .space{
     margin-right: 6px;
@@ -363,4 +363,9 @@ footer p{
 
   .content{
       display: none;
+  }
+
+  iframe{
+      width: 23rem;
+      height: 10rem;
   }
