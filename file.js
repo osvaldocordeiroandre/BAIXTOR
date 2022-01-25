@@ -36,14 +36,14 @@ window.addEventListener('scroll', definirBotao);
 
 function botaoMenu() {
     let menu = document.querySelector('.nav-list');
-  
-    if (menu.style.display == 'none') {
-      menu.style.display = 'flex';
+
+    if (menu.style.display == 'flex') {
+      menu.style.display= 'none';
     } else {
-      menu.style.display = 'none';
+      menu.style.display = 'flex';
     }
-  
-  };
+
+  }; 
 
   function loading(){
       document.querySelector('.loader-wrapper').style.display = 'none';
