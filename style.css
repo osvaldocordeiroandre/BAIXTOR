@@ -312,19 +312,8 @@ footer p{
     text-align: center;
 
     padding-top: 20px;
-
-    animation: opacidade 1s;
+    
 } 
-
-@keyframes opacidade{
-    from{
-        opacity: 0;
-    }
-
-    to{
-        opacity: 1;
-    }
-}
 
 .loader-wrapper{
     background-color: rgb(43, 43, 43);
