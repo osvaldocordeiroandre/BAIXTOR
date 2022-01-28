@@ -50,3 +50,7 @@ function botaoMenu() {
       document.querySelector('.content').style.display = 'block';
   }
 
+  function linkInvalido() {
+    alert('Não disponivel para download');
+  }
+

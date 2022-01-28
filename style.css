@@ -368,3 +368,17 @@ footer p{
         height: 10rem;
     }
   }
+
+  .download-go{
+      color: rgb(73, 223, 35);
+
+      margin-top: 30px;
+
+      opacity: 50%;
+  }
+
+  .download-go:hover{
+      opacity: 100%;
+
+      cursor: pointer;
+  }
