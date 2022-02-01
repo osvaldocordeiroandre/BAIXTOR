@@ -29,6 +29,18 @@
         <section class="borderline"></section>
         <div class="capas" id="filmes">
 
+            <div class="space" nome="A Era do Gelo - As Aventuras de Buck"><a href="buck.html"><img
+                        src="Capas/new uploads/A Era do Gelo - As Aventuras de Buck.png" width="200px" alt=""></a>
+            </div>
+
+            <div class="space" nome="A incrivel historia da ilha das rosas"><a href="ilhadasrosas.html"><img
+                        src="Capas/new uploads/A incrivel historia da ilha das rosas.png" width="200px" alt=""></a>
+            </div>
+
+            <div class="space" nome="A Família Mitchell e a Revolta das Máquinas"><a href="FamiliaMitchell.html"><img
+                        src="Capas/player lento/A Família Mitchell e a Revolta das Máquinas.png" width="200px"
+                        alt=""></a></div>
+
             <div class="space" nome="Space Jam: Um Novo Legado "><a href="SpaceJam.html"><img
                         src="Capas/player lento/Space Jam Um Novo Legado.png" width="200px" alt=""></a></div>
 
@@ -93,25 +105,7 @@
         </p>
     </footer>
 
-    <script>
-        for (i of document.querySelectorAll('[search]')) {
-            try {
-                busca(i, document.querySelector("#" + i.getAttribute('search')))
-            } catch (e) { }
-        }
-
-        function busca(input_field, div) {
-            input_field.onkeyup = function (e) {
-                for (di of div.children) {
-                    r = new RegExp(this.value.toLowerCase(), "g")
-                    if (di.getAttribute("nome").toLowerCase().match(r) != null)
-                        di.style.removeProperty('display')
-                    else
-                        di.style.display = "none"
-                }
-            }
-        }
-    </script>
+    <div class="button-upper" onclick="buttonUpper()">Subir</div>
 
     <script src="file.js"></script>
     <script src="pace.min.js"></script>
