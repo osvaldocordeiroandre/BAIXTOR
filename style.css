@@ -382,3 +382,24 @@ footer p{
 
       cursor: pointer;
   }
+
+  .eps{
+      margin-bottom: 30px;
+  }
+
+  .eps a{
+      margin-left: 10px;
+
+      border: 1px solid;
+
+      padding: 4px;
+
+      border-radius: 10px;
+
+  }
+
+  .eps a:hover{
+      background-color: rgb(73, 223, 35);
+
+      color: black;
+  }
