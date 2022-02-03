@@ -31,6 +31,8 @@
         <section class="borderline"></section>
         <div class="capas" id="filmes">
 
+            <div class="space" nome="Pacificador"> <a href="Pacificador.html"><img src="Capas/Capas convertidas/series/Pacificador.png" width="200px" alt=""></a> </div>
+
             <div class="space" nome="Elite"> <a href="EliteTodosEp.html"><img src="Capas/Capas convertidas/series/Elite.png" width="200px" alt=""></a> </div>
 
             <div class="space" nome="La casa de papel"> <a href="LaCasa.html"><img src="Capas/series online/La casa de papel  Parte 5.png" width="200px" alt=""></a> </div>
@@ -42,26 +44,6 @@
             For my Parents ♥
         </p>
     </footer>
-
-    <script>
-        for (i of document.querySelectorAll('[search]')) {
-            try {
-                busca(i, document.querySelector("#" + i.getAttribute('search')))
-            } catch (e) { }
-        }
-
-        function busca(input_field, div) {
-            input_field.onkeyup = function (e) {
-                for (di of div.children) {
-                    r = new RegExp(this.value.toLowerCase(), "g")
-                    if (di.getAttribute("nome").toLowerCase().match(r) != null)
-                        di.style.removeProperty('display')
-                    else
-                        di.style.display = "none"
-                }
-            }
-        }
-    </script>
 
     <script src="file.js"></script>
     <script src="pace.min.js"></script>
